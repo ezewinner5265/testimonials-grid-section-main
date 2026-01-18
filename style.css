@@ -1,0 +1,189 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: auto;
+  margin-top: 100px;
+  width: 95%;
+}
+
+.card1 {
+  background: hsl(263, 55%, 52%);
+  border-radius: 5px;
+  box-shadow: 30px 50px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 30px 30px 20px 30px;
+}
+
+.card2 {
+  background: hsl(217, 19%, 35%);
+  border-radius: 5px;
+  box-shadow: 30px 50px 30px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 30px 30px 20px 30px;
+}
+
+.card3 {
+  background: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: 0px 30px 50px 30px rgba(0, 0, 0, 0.2);
+  color: hsl(217, 19%, 35%);
+  padding: 30px 30px 20px 30px;
+}
+
+.card4 {
+  background: hsl(219, 29%, 14%);
+  border-radius: 5px;
+  box-shadow: 30px 50px 30px rgba(0, 0, 0, 0.2);
+  color: hsl(0, 0%, 81%);
+  padding: 30px 30px 20px 30px;
+}
+
+.card5 {
+  background: hsl(0, 0%, 100%);
+  border-radius: 5px;
+  box-shadow: 0px 30px 50px 30px rgba(0, 0, 0, 0.2);
+  color: hsl(217, 19%, 35%);
+  padding: 30px 30px 20px 30px;
+}
+
+.p-sec {
+  display: flex;
+  gap: px;
+}
+
+img {
+  border: 2px solid hsl(264, 82%, 80%);
+  border-radius: 50%;
+  width: 50%;
+}
+
+.h4 {
+  color: white;
+  display: block;
+  font-family: "BarlowSemiCondensed-Medium", sans-serif;
+  font-size: 0.9rem;
+}
+
+#h4 {
+  color: hsl(217, 19%, 35%);
+  display: block;
+  font-family: "BarlowSemiCondensed-Medium", sans-serif;
+  font-size: 0.9rem;
+}
+
+span {
+  color: hsl(0, 0%, 81%);
+  font-family: "BarlowSemiCondensed-Regular", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.25rem;
+}
+
+.sub {
+  color: hsl(224, 10%, 45%);
+  font-family: "BarlowSemiCondensed-Regular", sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.25rem;
+}
+
+h3 {
+  font-family: "BarlowSemiCondensed-Bold", sans-serif;
+  font-size: 1.18rem;
+  letter-spacing: 0.01rem;
+}
+
+p {
+  color: hsl(0, 0%, 81%);
+  font-family: "BarlowSemiCondensed-Regular", sans-serif;
+  font-size: 0.79rem;
+  line-height: 1.1rem;
+}
+
+.p {
+  color: hsl(217, 19%, 35%);
+  font-family: "BarlowSemiCondensed-Regular", sans-serif;
+  font-size: 0.79rem;
+  line-height: 1.1rem;
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed-Medium";
+  src: url("./fonts/BarlowSemiCondensed-Medium.ttf"), format("truetype");
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed-Regular";
+  src: url("./fonts/BarlowSemiCondensed-Regular.ttf"), format("truetype");
+}
+
+@font-face {
+  font-family: "BarlowSemiCondensed-Bold";
+  src: url("./fonts/BarlowSemiCondensed-SemiBold.ttf"), format("truetype");
+}
+
+@media (min-width: 23.43em) {
+  .container {
+    width: 80.5%;
+  }
+}
+
+@media (min-width: 26.56em) {
+  .container {
+    width: 70.8%;
+  }
+}
+
+@media (min-width: 48em) {
+  .container {
+    display: grid;
+    grid-template-areas:
+      "right right right right main menu"
+      "footer left left left left menu";
+    gap: 20px;
+    width: 95%;
+  }
+
+  .card1 {
+    background-image: url("./images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: 150px 0px;
+    background-size: 115px;
+    grid-area: right;
+  }
+
+  .card2 {
+    grid-area: main;
+  }
+
+  .card3 {
+    grid-area: footer;
+  }
+
+  .card4 {
+    grid-area: left;
+  }
+
+  .card5 {
+    grid-area: menu;
+  }
+}
+
+@media (min-width: 64em) {
+    .container {
+        width: 100%;
+    }
+
+    .card1 {
+        background-position: 350px 0px;
+    }
+}
+
+@media (min-width: 90em) {
+    .container {
+        width: 72.5%;
+    }
+
+    .card1 {
+        background-position: 380px 0px;
+    }
+}
