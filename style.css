@@ -146,7 +146,7 @@ p {
   .card1 {
     background-image: url("./images/bg-pattern-quotation.svg");
     background-repeat: no-repeat;
-    background-position: 150px 0px;
+    background-position: top right;
     background-size: 115px;
     grid-area: right;
   }
@@ -173,17 +173,10 @@ p {
         width: 100%;
     }
 
-    .card1 {
-        background-position: 350px 0px;
-    }
 }
 
 @media (min-width: 90em) {
     .container {
         width: 72.5%;
-    }
-
-    .card1 {
-        background-position: 380px 0px;
     }
 }
