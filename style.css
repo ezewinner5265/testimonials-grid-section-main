@@ -140,7 +140,7 @@ p {
       "right right right right main menu"
       "footer left left left left menu";
     gap: 20px;
-    width: 95%;
+    width: 100%;
   }
 
   .card1 {
@@ -170,13 +170,13 @@ p {
 
 @media (min-width: 64em) {
     .container {
-        width: 100%;
+        width: 90%;
     }
 
 }
 
 @media (min-width: 90em) {
     .container {
-        width: 72.5%;
+        width: 72.9%;
     }
 }
